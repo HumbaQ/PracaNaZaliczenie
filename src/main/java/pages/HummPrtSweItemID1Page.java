@@ -19,36 +19,39 @@ public class HummPrtSweItemID1Page {
     }
 
     public void chooseAmount() throws InterruptedException {
-       // WebElement chooseAmount = driver.findElement(By.id("quantity_wanted"));
+        WebElement chooseAmount = driver.findElement(By.id("quantity_wanted"));
         //WebElement chooseAmount1 = driver.findElement(By.xpath("//div/div/div/span/button"));
         //WebElement chooseAmount3 = driver.findElement(By.cssSelector("[class='material-icons touchspin-up']"));
        // WebElement chooseAmount4 = driver.findElement(By.cssSelector("i.material-icons.touchspin-up"));
         //WebElement chooseAmount5 = driver.findElement(By.cssSelector("i.material-icons.touchspin-up"));
 
-        //Niewiedzieć czemu na chromie nie działąją prawidłowo poniższe metody.
-//        chooseAmount.click();
-//        chooseAmount.clear();
-//        chooseAmount.sendKeys("5");
+
+        Thread.sleep(1000);
+        chooseAmount.click();
+        Thread.sleep(1000);
+        chooseAmount.clear();
+        Thread.sleep(1000);
+        chooseAmount.sendKeys("5");
 
 
-            //daje losowe wyniki na stronie.
+
 //        int clicks = 0;
 //        while(clicks<4){
 //            chooseAmount4.click();
 //            clicks++;
 //        }
-                //daje losowe wyniki na stronie.
-//            for (int clicks = 0; clicks < 7; clicks++) { //daje losowe wyniki na stronie XD
+
+//            for (int clicks = 0; clicks < 7; clicks++) {
 //                chooseAmount5.click();
 //                    Thread.sleep(1000);
 //            }
-            //daje losowe wyniki na stronie.
 
-        WebElement chooseAmount = driver.findElement(By.cssSelector("i.material-icons.touchspin-up"));
-        for (int clicks = 0; clicks < 5; clicks++) {
-            chooseAmount.click();
-            Thread.sleep(1000);
-        }
+
+//        WebElement chooseAmount = driver.findElement(By.cssSelector("i.material-icons.touchspin-up"));
+//        for (int clicks = 0; clicks < 5; clicks++) {
+//            chooseAmount.click();
+//            Thread.sleep(1000);
+//        }
     }
     public void setClickAddToCart() {
 
