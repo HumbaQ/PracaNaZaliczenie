@@ -85,7 +85,7 @@ public class MainZD1 {
 
         //YourAddresses
         WebElement buttonDelete = driver.findElement(By.xpath("//*[text() = 'Delete']"));
-       //WebElement buttonDelete = driver.findElement(By.xpath("//section/div/article/div/a[2]"));
+       //WebElement buttonDelete = driver.findElement(By.xpath("//section/div/article/div/a[2]")); [LAST google]
         buttonDelete.click();
 
 
